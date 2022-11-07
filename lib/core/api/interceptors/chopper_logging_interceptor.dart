@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:developer';
 import 'package:flutter/foundation.dart';
 import 'package:chopper/chopper.dart';
 import 'package:http/http.dart' as http;
@@ -29,7 +30,7 @@ class ChopperLoggingInterceptor
           '-> body -> 🤪 \n$body\n '
           '\n'
           '--> END 🤪 ${base.method}$bytes';
-      debugPrint('\x1B[33m$message\x1B[0m');
+      log('\x1B[33m$message\x1B[0m');
     }
     return request;
   }
@@ -50,10 +51,10 @@ class ChopperLoggingInterceptor
             '\n'
             '-> headers 🐶 -> ${headers.toString()}'
             '\n'
-            '-> response -> 😲 \n${resp.body}\n '
+            '-> response -> 😲 \n${'succes'}\n '
             '\n'
             '--> END 🤪 ${base?.method}$bytes';
-        debugPrint('\x1B[33m$message\x1B[0m');
+        log('\x1B[33m$message\x1B[0m');
       }
     }
     return response;

@@ -14,10 +14,10 @@ abstract class ConfigChopperClient {
 @Injectable(as: ConfigChopperClient)
 class UniversitiesChopperConfiguration extends ConfigChopperClient {
   @override
-  String get api3BaseUrl => enviromentUrls['production']!;
+  String get api3BaseUrl => enviromentUrls['dev']!;
 
   @override
-  String get baseUrl => enviromentUrls['production']!;
+  String get baseUrl => enviromentUrls['dev']!;
 
   @override
   Iterable<ChopperService> get services => appChopperServices;

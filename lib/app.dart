@@ -28,7 +28,7 @@ class _AppState extends State<App> {
       supportedLocales: AppLocalizations.delegate.supportedLocales,
       locale: widget.systemLocale,
       theme: theme,
-      initialRoute: '/',
+      initialRoute: Pages.splash,
       navigatorKey: StackedService.navigatorKey,
       routes: routesApp,
     );
