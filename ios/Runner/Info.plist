@@ -52,5 +52,7 @@
 		<string>sms</string>
 		<string>tel</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<tue/>
 </dict>
 </plist>
