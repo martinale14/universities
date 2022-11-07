@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stacked_services/stacked_services.dart';
+import 'package:universities/src/splash/ui/screens/splash_screen.dart';
 
 class CoreNavigator extends NavigationService {
   pushReplacement(String route, {dynamic arguments}) =>
@@ -12,9 +13,13 @@ class CoreNavigator extends NavigationService {
       );
 }
 
-extension Pages on String {}
+extension Pages on String {
+  static const splash = '/';
+}
 
-Map<String, WidgetBuilder> routesApp = {};
+Map<String, WidgetBuilder> routesApp = {
+  Pages.splash: (context) => const SplashScreen(),
+};
 
 Widget pageTransition(context, animation, secondaryAnimation, child) {
   const begin = 0.0;
