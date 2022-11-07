@@ -1,5 +1,8 @@
 import 'dart:convert';
 
+import 'package:universities/core/utils/app_constants.dart';
+import 'package:universities/core/utils/enums.dart';
+
 extension StringExtension on String {
   bool isJson() {
     try {
@@ -12,5 +15,18 @@ extension StringExtension on String {
 
   Map<String, dynamic> toJson() {
     return json.decode(trim());
+  }
+
+  ViewType toViewType() {
+    switch (this) {
+      case Constants.gridViewType:
+        return ViewType.grid;
+
+      case Constants.listViewType:
+        return ViewType.list;
+
+      default:
+        return ViewType.grid;
+    }
   }
 }

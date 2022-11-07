@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:devicelocale/devicelocale.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -23,8 +25,10 @@ void main() async {
 
   coreNavigator.config(defaultTransitionStyle: Transition.fade);
 
-  String systemLocaleCode =
-      (await Devicelocale.currentLocale) == 'en' ? 'en' : 'es';
+  String? locale = await Devicelocale.currentLocale;
+  log(locale.toString());
+
+  String systemLocaleCode = locale == 'en-US' ? 'en' : 'es';
 
   runApp(
     App(
