@@ -1,16 +1,15 @@
-# example
+# Universities
 
-A new Flutter project.
+Este proyecto fue desarrollado basandose en la arquitectura stacked de Filled Stacks.
 
-## Getting Started
+## Pasos para correr
 
-This project is a starting point for a Flutter application.
+- Clonar el proyecto git clone https://github.com/martinale14/universities.git
+- Correr los siguientes comandos desde dentro del proyecto:
+  - flutter pub get
+  - flutter pub run build_runner build --delete-conflicting-outputs
+  - flutter pub run intl_utils:generate
+  
+Como extra quedo la aplicación con soporte para el idioma ingles si se cuenta con el dispositivo configurado con inglés de estados unidos y las url de las universidades pueden abrirse en un navegador.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Ahora si podemos correr el proyecto normalmente.
