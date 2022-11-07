@@ -96,6 +96,7 @@ class _InfiniteScrollwidgetState extends State<InfiniteScrollwidget> {
   Widget build(BuildContext context) {
     return CustomScrollView(
       controller: _controller,
+      physics: const ClampingScrollPhysics(),
       slivers: [
         widget.defineChild(currentUniversities),
         if (loading)

@@ -30,6 +30,7 @@ class DefaultListWidget extends HookViewModelWidget<UniversityDetailViewmodel> {
           ),
           const SizedBox(height: 5),
           ListView.builder(
+            physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             itemCount: items.length,
             itemBuilder: (_, itemIndex) => ListTile(
