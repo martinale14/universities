@@ -47,9 +47,9 @@ class AppBaseScreen extends StatelessWidget {
           color: backgroundColor ?? Colors.white,
           child: AnnotatedRegion<SystemUiOverlayStyle>(
             value: SystemUiOverlayStyle(
-                statusBarColor: statusBarColor ?? Colors.white,
+                statusBarColor: statusBarColor ?? Colors.transparent,
                 systemNavigationBarColor:
-                    systemNavigationBarColor ?? Colors.white,
+                    systemNavigationBarColor ?? Colors.transparent,
                 statusBarBrightness: statusBarTheme ?? Brightness.dark,
                 statusBarIconBrightness: statusBarTheme ?? Brightness.dark,
                 systemNavigationBarIconBrightness:
@@ -58,18 +58,15 @@ class AppBaseScreen extends StatelessWidget {
               onWillPop: onBackPressed ?? () async => true,
               child: Stack(
                 children: [
-                  SafeArea(
-                    top: topSafeArea,
-                    child: Scaffold(
-                      resizeToAvoidBottomInset: resizeToAvoidBottomInset,
-                      extendBody: extendBody,
-                      backgroundColor: backgroundColor ?? AppColors.background,
-                      appBar: appBar,
-                      drawer: drawer,
-                      floatingActionButton: fab,
-                      body: disableGlow(body),
-                      bottomNavigationBar: bottomNavigation,
-                    ),
+                  Scaffold(
+                    resizeToAvoidBottomInset: resizeToAvoidBottomInset,
+                    extendBody: extendBody,
+                    backgroundColor: backgroundColor ?? AppColors.background,
+                    appBar: appBar,
+                    drawer: drawer,
+                    floatingActionButton: fab,
+                    body: disableGlow(body),
+                    bottomNavigationBar: bottomNavigation,
                   ),
                   Visibility(
                     visible: isLoading,

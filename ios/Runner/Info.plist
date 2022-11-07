@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Example</string>
+	<string>Universities</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -53,6 +53,6 @@
 		<string>tel</string>
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<tue/>
+	<string>This library is to change the default image for the university</string> 
 </dict>
 </plist>
