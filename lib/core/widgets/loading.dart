@@ -12,11 +12,7 @@ class Loading extends StatelessWidget {
         height: double.maxFinite,
         color: AppColors.background,
         child: Center(
-          child: SizedBox(
-            width: 100,
-            height: 100,
-            child: progress ?? const CircularProgressIndicator(),
-          ),
+          child: progress ?? const CircularProgressIndicator(),
         ),
       );
 }

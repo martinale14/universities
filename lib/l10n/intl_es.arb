@@ -4,5 +4,23 @@
   "acceptButtonText": "Aceptar",
   "cancelButttonText": "Cancelar",
   "unauthorizedExceptionMessage": "Acceso no autorizado",
-  "internetErrorText": "Error de internet"
+  "internetErrorText": "Error de internet",
+  "homeTittle": "Inicio",
+  "detail": "{detailName} detalle",
+  "@detail": {
+    "type": "text",
+    "placeholders": {
+      "detailName": {
+        "type": "String",
+        "example": "University of Georgia"
+      }
+    }
+  },
+  "requiredFieldValidation": "El campo es requerido",
+  "addNumberOfStudentsText": "Añadir número de estudiantes",
+  "submitButtonText": "Guardar",
+  "webPagesTitle": "Páginas web",
+  "domainsTitle": "Dominios",
+  "numerOfStudentsText": "Número de estudiantes",
+  "pressTheIconText": "Presiona el icono para subir una imagen"
 }

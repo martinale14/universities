@@ -4,5 +4,23 @@
   "acceptButtonText": "Accept",
   "cancelButttonText": "Cancel",
   "unauthorizedExceptionMessage": "Unauthorized acces",
-  "internetErrorText": "Internet error"
+  "internetErrorText": "Internet error",
+  "homeTittle": "Home",
+  "detail": "{detailName} detail",
+  "@detail": {
+    "type": "text",
+    "placeholders": {
+      "detailName": {
+        "type": "String",
+        "example": "University of Georgia"
+      }
+    }
+  },
+  "requiredFieldValidation": "The field is required",
+  "addNumberOfStudentsText": "Add number of students",
+  "submitButtonText": "Submit",
+  "webPagesTitle": "Web pages",
+  "domainsTitle": "Domains",
+  "numerOfStudentsText": "Number of students",
+  "pressTheIconText": "Press the icon to submit an image"
 }
