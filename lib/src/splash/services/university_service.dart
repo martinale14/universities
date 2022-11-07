@@ -9,7 +9,7 @@ import 'package:universities/src/splash/api/repository/university_repository.dar
 @lazySingleton
 class UniversityService extends AppBaseReactiveService {
   final UniversityRepository _universityRepository;
-  final ReactiveValue<List<UniversityModel>?> universities =
+  final ReactiveValue<List<UniversityModel>?> universitiesReactiveValue =
       ReactiveValue(null);
 
   @factoryMethod
@@ -21,7 +21,8 @@ class UniversityService extends AppBaseReactiveService {
     loadingReactiveValue.value = true;
     return _universityRepository.getUniversities().then((response) async {
       if (response.status == Status.completed) {
-        universities.value = response.data as List<UniversityModel>;
+        universitiesReactiveValue.value =
+            response.data as List<UniversityModel>;
 
         return response.data;
       } else {

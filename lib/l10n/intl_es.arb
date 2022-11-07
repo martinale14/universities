@@ -4,5 +4,6 @@
   "acceptButtonText": "Aceptar",
   "cancelButttonText": "Cancelar",
   "unauthorizedExceptionMessage": "Acceso no autorizado",
-  "internetErrorText": "Error de internet"
+  "internetErrorText": "Error de internet",
+  "homeTittle": "Inicio"
 }
