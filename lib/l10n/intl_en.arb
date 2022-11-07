@@ -1,0 +1,8 @@
+{
+  "@@locale": "en",
+  "serverErrorText": "Server internal error",
+  "acceptButtonText": "Accept",
+  "cancelButttonText": "Cancel",
+  "unauthorizedExceptionMessage": "Unauthorized acces",
+  "internetErrorText": "Internet error"
+}
