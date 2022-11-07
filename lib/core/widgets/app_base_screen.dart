@@ -44,7 +44,7 @@ class AppBaseScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) => KeyboardDismissOnTap(
         child: Container(
-          color: backgroundColor ?? Colors.white,
+          color: backgroundColor ?? Colors.transparent,
           child: AnnotatedRegion<SystemUiOverlayStyle>(
             value: SystemUiOverlayStyle(
                 statusBarColor: statusBarColor ?? Colors.transparent,
