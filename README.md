@@ -4,6 +4,8 @@ Este proyecto fue desarrollado basandose en la arquitectura stacked de Filled St
 
 ## Pasos para correr
 
+Flutter Version: 3.3.7
+
 - Clonar el proyecto git clone https://github.com/martinale14/universities.git
 - Correr los siguientes comandos desde dentro del proyecto:
   - flutter pub get
