@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:universities/core/utils/app_animations.dart';
 import 'package:universities/core/utils/app_colors.dart';
 
 class Loading extends StatelessWidget {
@@ -12,7 +13,7 @@ class Loading extends StatelessWidget {
         height: double.maxFinite,
         color: AppColors.background,
         child: Center(
-          child: progress ?? const CircularProgressIndicator(),
+          child: progress ?? AppAnimations.loadingMainAnimation,
         ),
       );
 }

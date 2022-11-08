@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:universities/core/utils/app_animations.dart';
 import 'package:universities/models/university_model.dart';
 
 class InfiniteScrollwidget extends StatefulWidget {
@@ -100,11 +101,11 @@ class _InfiniteScrollwidgetState extends State<InfiniteScrollwidget> {
       slivers: [
         widget.defineChild(currentUniversities),
         if (loading)
-          const SliverToBoxAdapter(
+          SliverToBoxAdapter(
             child: Padding(
-              padding: EdgeInsets.symmetric(vertical: 15),
+              padding: const EdgeInsets.symmetric(vertical: 15),
               child: Center(
-                child: CircularProgressIndicator(),
+                child: AppAnimations.loadingSmallAnimation,
               ),
             ),
           ),

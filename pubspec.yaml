@@ -44,6 +44,7 @@ dependencies:
   injectable: ^1.5.4
   intl: ^0.17.0
   json_annotation: ^4.7.0
+  lottie: ^1.4.3
   shared_preferences: ^2.0.15
   stacked: ^3.0.0
   stacked_hooks: ^0.2.2
@@ -81,6 +82,7 @@ flutter:
 
   assets:
     - assets/app_icons/
+    - assets/animations/
     - assets/fonts/
 
   # To add assets to your application, add an assets section, like this:
